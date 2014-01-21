@@ -1,12 +1,13 @@
-The Okta Connect SDK for iOS is a framework that you can link to your iOS application to enable SSO with the Okta Mobile app. This SDK requires that the mobile beta flag be set for your organization, and your app configured in the admin interface for your org. See the PowerPoint presentation in this repository for more information.
+# Okta Mobile Connect SDK
+The Okta Mobile Connect SDK for iOS is a framework that you can link to your iOS application to enable SSO with the Okta Mobile app. This SDK requires that the mobile beta flag be set for your organization, and your app configured in the admin interface for your org. See the PowerPoint presentation in this repository for more information.
 
 
-# Dependencies :
+# Dependencies
 Security.framework library
 
 Usage:
 
-# Initiating SSO Call:
+# Initiating SSO Call
 
     OktaSSO *ssoEngine = [OktaSSO sharedInstance];
     BOOL response = [ssoEngine sendRequestForApp:@"<YourAppName>"
@@ -14,7 +15,7 @@ Usage:
     type. COOKIES support coming soon.
 
 
-# Handing SSO Response:
+# Handing SSO Response
 
     -(BOOL)application:(UIApplication *)application openURL:(NSURL *)url
     sourceApplication:(NSString *)sourceApplication
