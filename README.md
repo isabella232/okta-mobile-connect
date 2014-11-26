@@ -69,6 +69,9 @@ will need to do, at a high level:
     from the embedded browser into your mobile application.
 5.  Your native mobile application is now authenticated to your back end servers.
 
+See the "SAML-Sample" directory in this project for an example of how
+to implement SAML based login for an iOS application.
+
 ## How Okta Mobile Connect works – an overview
 
 The process via which Okta enables Single Sign On in native mobile
