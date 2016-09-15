@@ -23,6 +23,16 @@ characteristics will work with Okta Mobile Connect:
 -   The application has a registered URL scheme and supports being
     called by this URL scheme.
 
+Beginning with iOS 9, applications must whitelist URLs they plan to open. Add the following to your Info.plist to allow opening Okta Mobile, if you already have an `LSApplicationQueriesScheme` entry append `okta` and `oktasso` to it.
+
+~~~~
+	<key>LSApplicationQueriesSchemes</key>
+ 	<array>
+ 		<string>okta</string>
+ 		<string>oktasso</string>
+ 	</array>
+~~~~
+
 Typically, mobile applications that support SAML use an embedded browser
 to do the SAML request flow. A best practice for mobile SAML support is
 to restrict the embedded browser to a URL “whitelist”. In cases like
